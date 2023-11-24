@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .contain{
+            background-color: skyblue;
+            display: grid;
+            grid-template-rows: 1fr 3fr 1fr;
+            gap: 10px;
+            text-align: center;
+            padding: 10px;
+        }
+        .header{
+            background-color: yellow;
+        }
+        .maincontain{
+            background-color: red;
+            display: grid;
+            
+            grid-template-columns: 1fr 3fr;
+            
+        
+        }
+        .maincontain_aside{
+            background-color: blue;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .maincontain_article{
+            background-color: blueviolet;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .article_img{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        .img{
+            background-color: orange;
+            
+        }
+        .footer{
+            background-color: aquamarine;
+        }
+
+    </style>
+    <div class="contain">
+        <div class="header">Header</div>
+        <div class="maincontain">
+            <div class="maincontain_aside">Aside</div>
+            <div class="maincontain_article">
+                Article
+                <div class="article_img">
+                    <div  class="img">Image</div>
+                    <div class="img">Image</div>
+                    <div class="img">Image</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>
